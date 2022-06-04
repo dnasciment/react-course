@@ -1,4 +1,5 @@
-import Expenses from './components/Expenses/Expenses';
+import NewExpense from "./components/ExpenseForm/NewExpense";
+import Expenses from "./components/Expenses/Expenses";
 
 const App = () => {
   const expenses = [
@@ -25,8 +26,9 @@ const App = () => {
 
   return (
     <div>
+      <NewExpense></NewExpense>
       <Expenses {...expenses}></Expenses>
     </div>
   );
-}
+};
 export default App;
